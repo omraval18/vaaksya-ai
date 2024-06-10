@@ -3,10 +3,10 @@ import * as React from 'react'
 import Link from 'next/link'
 
 import { cn } from '@/lib/utils'
-import { SidebarList } from '@/components/sidebar-list'
+import { SidebarList } from '@/components/sidebar/sidebar-list'
 import { buttonVariants } from '@/components/ui/button'
 import { PlusIcon } from '@radix-ui/react-icons'
-import { TextureButton } from './ui/texture-button'
+import { TextureButton } from '../ui/texture-button'
 interface ChatHistoryProps {
   userId?: string
 }

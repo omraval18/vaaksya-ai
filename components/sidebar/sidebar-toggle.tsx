@@ -4,7 +4,7 @@ import * as React from 'react'
 
 import { useSidebar } from '@/lib/hooks/use-sidebar'
 import { Button } from '@/components/ui/button'
-import { Sidebar } from 'lucide-react'
+import { PanelRight } from 'lucide-react'
 
 export function SidebarToggle() {
   const { toggleSidebar } = useSidebar()
@@ -17,7 +17,7 @@ export function SidebarToggle() {
         toggleSidebar()
       }}
     >
-      <Sidebar className="size-6" />
+      <PanelRight className="size-6" />
       <span className="sr-only">Toggle Sidebar</span>
     </Button>
   )

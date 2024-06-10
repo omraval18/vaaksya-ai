@@ -1,12 +1,12 @@
 import { nanoid } from '@/lib/utils'
-import { Chat } from '@/components/chat'
+import { Chat } from '@/components/chat/chat'
 import { AI } from '@/lib/chat/actions'
 import { auth } from '@/auth'
 import { Session } from '@/lib/types'
 import { getMissingKeys } from '@/app/actions'
 
 export const metadata = {
-  title: 'Next.js AI Chatbot'
+  title: 'Talk with Vaaksya'
 }
 
 export default async function IndexPage() {
