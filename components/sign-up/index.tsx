@@ -5,7 +5,7 @@ import { signup } from '@/app/signup/actions'
 import Link from 'next/link'
 import { useEffect } from 'react'
 import { toast } from 'sonner'
-import { IconSpinner } from './ui/icons'
+import { IconSpinner } from '@/components/ui/icons'
 import { getMessageFromCode } from '@/lib/utils'
 import { useRouter } from 'next/navigation'
 

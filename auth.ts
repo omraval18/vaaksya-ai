@@ -4,6 +4,7 @@ import { authConfig } from './auth.config'
 import { z } from 'zod'
 import { getStringFromBuffer } from './lib/utils'
 import { getUser } from './app/login/actions'
+import { User } from '@/lib/types'
 
 export const { auth, signIn, signOut } = NextAuth({
   ...authConfig,
@@ -32,7 +33,7 @@ export const { auth, signIn, signOut } = NextAuth({
           const hashedPassword = getStringFromBuffer(hashedPasswordBuffer)
 
           if (hashedPassword === user.password) {
-            return user
+            return user as User
           } else {
             return null
           }
